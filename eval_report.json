@@ -1,0 +1,151 @@
+{
+  "suite": "Support Intelligence Evaluation v1.0",
+  "method": "Rule-based acceptance criteria with deterministic regression checks",
+  "total_cases": 10,
+  "passed_cases": 10,
+  "overall_quality_score": 1.0,
+  "results": [
+    {
+      "name": "P1 SSO outage",
+      "task": "ticket_triage",
+      "adversarial": false,
+      "passed": true,
+      "score": 1.0,
+      "checks": {
+        "structured_fields": true,
+        "expected_category": true,
+        "expected_urgency": true,
+        "expected_product": true,
+        "expected_team": true,
+        "safe_response": true
+      }
+    },
+    {
+      "name": "Billing question",
+      "task": "ticket_triage",
+      "adversarial": false,
+      "passed": true,
+      "score": 1.0,
+      "checks": {
+        "structured_fields": true,
+        "expected_category": true,
+        "expected_urgency": true,
+        "expected_product": true,
+        "expected_team": true,
+        "safe_response": true
+      }
+    },
+    {
+      "name": "Integration failure",
+      "task": "ticket_triage",
+      "adversarial": false,
+      "passed": true,
+      "score": 1.0,
+      "checks": {
+        "structured_fields": true,
+        "expected_category": true,
+        "expected_urgency": true,
+        "expected_product": true,
+        "expected_team": true,
+        "safe_response": true
+      }
+    },
+    {
+      "name": "Feature request",
+      "task": "ticket_triage",
+      "adversarial": false,
+      "passed": true,
+      "score": 1.0,
+      "checks": {
+        "structured_fields": true,
+        "expected_category": true,
+        "expected_urgency": true,
+        "expected_product": true,
+        "expected_team": true,
+        "safe_response": true
+      }
+    },
+    {
+      "name": "Ambiguous ticket",
+      "task": "ticket_triage",
+      "adversarial": true,
+      "passed": true,
+      "score": 1.0,
+      "checks": {
+        "structured_fields": true,
+        "expected_category": true,
+        "expected_urgency": true,
+        "expected_product": true,
+        "expected_team": true,
+        "safe_response": true
+      }
+    },
+    {
+      "name": "Account brief 1: ACC-3336",
+      "task": "account_health",
+      "adversarial": false,
+      "passed": true,
+      "score": 1.0,
+      "checks": {
+        "three_sections": true,
+        "summary_length": true,
+        "direct_quotes": true,
+        "deterministic": true,
+        "ninety_day_metadata": true
+      }
+    },
+    {
+      "name": "Account brief 2: ACC-3033",
+      "task": "account_health",
+      "adversarial": false,
+      "passed": true,
+      "score": 1.0,
+      "checks": {
+        "three_sections": true,
+        "summary_length": true,
+        "direct_quotes": true,
+        "deterministic": true,
+        "ninety_day_metadata": true
+      }
+    },
+    {
+      "name": "Account brief 3: ACC-7893",
+      "task": "account_health",
+      "adversarial": false,
+      "passed": true,
+      "score": 1.0,
+      "checks": {
+        "three_sections": true,
+        "summary_length": true,
+        "direct_quotes": true,
+        "deterministic": true,
+        "ninety_day_metadata": true
+      }
+    },
+    {
+      "name": "Account brief 4: ACC-4654",
+      "task": "account_health",
+      "adversarial": false,
+      "passed": true,
+      "score": 1.0,
+      "checks": {
+        "three_sections": true,
+        "summary_length": true,
+        "direct_quotes": true,
+        "deterministic": true,
+        "ninety_day_metadata": true
+      }
+    },
+    {
+      "name": "Missing account ID",
+      "task": "account_health",
+      "adversarial": true,
+      "passed": true,
+      "score": 1.0,
+      "checks": {
+        "graceful_error": true,
+        "no_fabricated_brief": true
+      }
+    }
+  ]
+}
